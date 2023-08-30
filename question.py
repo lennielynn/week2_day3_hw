@@ -22,8 +22,8 @@ def u_input():
                 shopping_list [item] = price
            if user_input == "remove":
                 print(shopping_list)
-                r_item = input("enter item you'd like removed")
-                shopping_list.pop(r_item)
+                r_item = input("enter item you'd like removed ")
+                del shopping_list[r_item]
        user_input = input("Quit or Continue? ")
        if user_input == "continue": 
          continue
